@@ -5,7 +5,7 @@ using UnityEngine;
 public class GeneradorMapa : MonoBehaviour
 {
     Vector3 posicionMover = Vector3.zero;
-    // Start is called before the first frame update
+    [SerializeField] GameObject[] trozosMapa = new GameObject[9];
     void Start()
     {
         
@@ -15,5 +15,13 @@ public class GeneradorMapa : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (gameObject.tag == "Player")
+        {
+            posicionMover += new Vector3();
+        }
     }
 }

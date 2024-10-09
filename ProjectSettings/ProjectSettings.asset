@@ -838,8 +838,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: RollingBall_Sergio_Garcia
-  metroPackageVersion: 
+  metroPackageName: RollingBallSergioGarcia
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -847,7 +847,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: RollingBall_Sergio_Garcia
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: RollingBall_Sergio_Garcia
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
