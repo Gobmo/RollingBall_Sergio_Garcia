@@ -24,15 +24,6 @@ public class Pelota : MonoBehaviour
         {
             Nitro();
         }
-        
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.Translate(new Vector3(-1, 0, 0) * 1.5f * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.Translate(new Vector3(1, 0, 0) * 1.5f * Time.deltaTime);
-        }
         if (nitroReady == false)
         {
             cooldownNitro -= Time.deltaTime;
@@ -49,8 +40,18 @@ public class Pelota : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             rb.AddForce(0, 0, 2, ForceMode.Force);
-            //transform.Translate(new Vector3(0, 0, 1) * 1.5f * Time.deltaTime);
-            Debug.Log(rb.velocity.z);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            rb.AddForce(0, 0, -2, ForceMode.Force);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb.AddForce(-2, 0, 0, ForceMode.Force);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            rb.AddForce(2, 0, 0, ForceMode.Force);
         }
     }
 
